@@ -28,6 +28,10 @@
   background-color: var(--clr-darkish-gray);
 }
 
+.btn:active {
+  background-color: red;
+}
+
 .section {
   margin-top: 1rem;
 }
@@ -74,6 +78,6 @@
 /* 2xL */
 @media (min-width: 1536px) {
   .container {
-    max-width: 1536px;
+    max-width: 1920px;
   }
 }

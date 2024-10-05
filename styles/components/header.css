@@ -271,7 +271,8 @@
   .planet-navigation {
     gap: 2rem;
   }
-  .header {
+
+  .main-header-box {
     width: 100%;
   }
 }

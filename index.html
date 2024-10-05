@@ -11,7 +11,7 @@
     />
     <title>Planets fact site</title>
   </head>
-  <body>
+  <body id="page1">
     <header class="header container">
       <div class="main-header-box">
         <h1 class="header-title">The Planets</h1>
@@ -56,13 +56,31 @@
     <main>
       <section class="hero container section">
         <div class="hero-box-two">
-          <img src="./public/planet-mercury.svg" alt="" class="image-one" />
+          <img
+            src="./public/planet-mercury.svg"
+            alt=""
+            id="overview-img"
+            class="image-one"
+          />
+          <img
+            src="./public/planet-mercury-internal.svg"
+            alt=""
+            id="internal-img"
+            class="image-one hidden"
+          />
+          <img
+            src="./public/geology-mercury.png"
+            alt=""
+            id="geology-img"
+            class="image-one-geology hidden"
+          />
 
           <div class="hero-content-box">
             <div class="title-paragraph">
               <h1 class="hero-title">Mercury</h1>
+
               <div class="overview-box">
-                <p class="hero-paragraph-text">
+                <p class="hero-paragraph-text" id="overview-text">
                   Mercury is the smallest planet in the Solar System and the
                   closest to the Sun. Its orbit around the Sun takes 87.97 Earth
                   days, the shortest of all the Sun's planets. Mercury is one of
@@ -89,7 +107,7 @@
               </div>
 
               <div class="interal-structure-box hidden">
-                <p class="hero-paragraph-text">
+                <p class="hero-paragraph-text" id="Structure-text">
                   Mercury appears to have a solid silicate crust and mantle
                   overlying a solid, iron sulfide outer core layer, a deeper
                   liquid core layer, and a solid inner core. The planet's
@@ -98,13 +116,17 @@
                 </p>
 
                 <p class="hero-link-text">
-                  Source : Wikipedia URL:
-                  https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure
+                  <strong class="text-wiki">Source :</strong>
+                  <a
+                    href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure"
+                  >
+                    Wikipedia</a
+                  >
                 </p>
               </div>
 
               <div class="surface-geology-box hidden">
-                <p class="hero-paragraph-text">
+                <p class="hero-paragraph-text" id="geology-text">
                   Mercury's surface is similar in appearance to that of the
                   Moon, showing extensive mare-like plains and heavy cratering,
                   indicating that it has been geologically inactive for billions
@@ -113,15 +135,26 @@
                 </p>
 
                 <p class="hero-link-text">
-                  Source : Wikipedia URL:
-                  https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology
+                  <strong class="text-wiki">Source :</strong>
+
+                  <a
+                    href="  https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology"
+                  >
+                    Wikipedia</a
+                  >
                 </p>
               </div>
             </div>
             <div class="button-box">
-              <button class="button btn">01 &nbsp; Overview</button>
-              <button class="button btn">02 &nbsp; Internal Structure</button>
-              <button class="button btn">03 &nbsp; Surface Geology</button>
+              <button class="button btn" id="overview">
+                01 &nbsp; Overview
+              </button>
+              <button class="button btn" id="structure">
+                02 &nbsp; Internal Structure
+              </button>
+              <button class="button btn" id="geology">
+                03 &nbsp; Surface Geology
+              </button>
             </div>
           </div>
         </div>

@@ -105,6 +105,18 @@
   font-size: var(--size-base);
 }
 
+.hidden {
+  display: none;
+}
+
+.image-one-geology {
+  position: absolute;
+  left: 43%;
+  top: 45%;
+  width: 50px;
+  height: 60px;
+}
+
 /* xs */
 @media (min-width: 475px) {
   .hero {
@@ -213,6 +225,12 @@
   .info-two {
     font-size: var(--size-lg);
   }
+  .image-one-geology {
+    left: 42%;
+    top: 46%;
+    width: 80px;
+    height: 100px;
+  }
 }
 
 /* Sm */
@@ -316,6 +334,13 @@
   .info-two {
     font-size: var(--size-base);
   }
+
+  .image-one-geology {
+    left: 43.5%;
+    top: 42%;
+    width: 90px;
+    height: 110px;
+  }
 }
 
 /* md */
@@ -411,6 +436,13 @@
   .info-two {
     font-size: var(--size-lg);
   }
+
+  .image-one-geology {
+    left: 19%;
+    top: 58%;
+    width: 130px;
+    height: 160px;
+  }
 }
 
 /* Lg */
@@ -440,6 +472,12 @@
     width: 170px;
     height: 70px;
     border: 0.1px solid var(--clr-darkish-gray);
+  }
+  .image-one-geology {
+    left: 28.5%;
+    top: 65%;
+    width: 130px;
+    height: 160px;
   }
 }
 
@@ -474,6 +512,12 @@
   .hero-box-two {
     gap: 16rem;
   }
+  .image-one-geology {
+    left: 30%;
+    top: 67%;
+    width: 130px;
+    height: 160px;
+  }
 }
 
 /* 2xL */
@@ -506,5 +550,11 @@
   }
   .hero-box-two {
     gap: 24rem;
+  }
+  .image-one-geology {
+    left: 35.5%;
+    top: 52%;
+    width: 140px;
+    height: 160px;
   }
 }
