@@ -19,7 +19,7 @@
   margin-top: 50px;
   width: 150px;
   height: 150px;
-  margin-bottom: -50px;
+  margin-bottom: 10px;
 }
 
 .title-paragraph {
@@ -79,7 +79,6 @@
   display: flex;
 }
 
-/* grab */
 .info {
   display: flex;
   flex-direction: column;
@@ -112,17 +111,17 @@
 
 .image-one-geology {
   position: absolute;
-  left: 43%;
-  top: 45%;
+  left: 45%;
+  top: 44%;
   width: 50px;
   height: 60px;
 }
 .saturn-geology {
   position: absolute;
-  left: 35%;
-  top: 42%;
-  width: 90px;
-  height: 100px;
+  left: 44%;
+  top: 39%;
+  width: 50px;
+  height: 60px;
 }
 
 .saturn {
@@ -162,7 +161,7 @@
     margin-top: 50px;
     width: 150px;
     height: 150px;
-    margin-bottom: 10px;
+    margin-bottom: -60px;
   }
 
   .title-paragraph {
@@ -248,10 +247,11 @@
     font-size: var(--size-lg);
   }
   .image-one-geology {
-    left: 42%;
-    top: 46%;
+    left: 67%;
+    top: 30%;
     width: 80px;
     height: 100px;
+    transform: rotate(-90deg);
   }
   .saturn-geology {
     position: absolute;
