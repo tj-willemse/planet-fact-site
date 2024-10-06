@@ -25,11 +25,7 @@
   text-indent: 5px;
 }
 .btn:hover {
-  background-color: var(--clr-darkish-gray);
-}
-
-.btn:active {
-  background-color: red;
+  background-color: var(--hover-color);
 }
 
 .section {

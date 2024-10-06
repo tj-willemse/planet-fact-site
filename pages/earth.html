@@ -3,50 +3,311 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon-32x32.png"
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
     />
-
-    <title>Frontend Mentor | Planets fact site</title>
+    <title>Planets fact site</title>
   </head>
-  <body>
-    Earth
+  <body id="page3">
+    <header class="header container">
+      <div class="main-header-box">
+        <h1 class="header-title">The Planets</h1>
+        <nav>
+          <ul class="planet-navigation">
+            <li class="planet-list">
+              <a class="nav-content" href="/index.html">Mercury</a>
+            </li>
 
-    <!-- Overview Content Start -->
+            <li class="planet-list">
+              <a class="nav-content" href="../pages/venus.html">Venus</a>
+            </li>
+            <li class="planet-list">
+              <a class="nav-content" href="../pages/earth.html">Earth</a>
+            </li>
+            <li class="planet-list">
+              <a class="nav-content" href="../pages/mars.html">Mars</a>
+            </li>
+            <li class="planet-list">
+              <a class="nav-content" href="../pages/jupiter.html">Jupiter</a>
+            </li>
+            <li class="planet-list">
+              <a class="nav-content" href="../pages/saturn.html">Saturn</a>
+            </li>
+            <li class="planet-list">
+              <a class="nav-content" href="../pages/uranus.html">Uranus</a>
+            </li>
+            <li class="planet-list">
+              <a class="nav-content" href="../pages/neptune.html">Neptune</a>
+            </li>
+          </ul>
+        </nav>
+        <img src="../public/icon-hamburger.svg" alt="" class="drop-down-icon" />
+      </div>
+      <div class="button-box-one">
+        <button class="button-one" id="overview-one">Overview</button>
+        <button class="button-one" id="structure-one">Structure</button>
+        <button class="button-one" id="geology-one">Surface</button>
+      </div>
+    </header>
+    <!-- mobile navigation -->
 
-    Third planet from the Sun and the only known planet to harbor life. About
-    29.2% of Earth's surface is land with remaining 70.8% is covered with water.
-    Earth's distance from the Sun, physical properties and geological history
-    have allowed life to evolve and thrive. Source : Wikipedia
-    <!-- URL: https://en.wikipedia.org/wiki/Earth -->
+    <div class="mobile-nav hidden">
+      <nav>
+        <ul class="mobile-nav-menu">
+          <li class="planet-list-mobile">
+            <div class="color-planet">
+              <div class="color-1" id="one"></div>
+              <a class="mobile-nav-link" href="/index.html">Mercury</a>
+            </div>
+            <img
+              src="../public/icon-chevron.svg"
+              alt="arrow"
+              class="mobile-arrow"
+            />
+          </li>
 
-    <!-- Overview Content End -->
+          <li class="planet-list-mobile">
+            <div class="color-planet">
+              <div class="color-1" id="two"></div>
+              <a class="mobile-nav-link" href="../pages/venus.html">Venus</a>
+            </div>
+            <img
+              src="../public/icon-chevron.svg"
+              alt="arrow"
+              class="mobile-arrow"
+            />
+          </li>
+          <li class="planet-list-mobile">
+            <div class="color-planet">
+              <div class="color-1" id="three"></div>
+              <a class="mobile-nav-link" href="../pages/earth.html">Earth</a>
+            </div>
+            <img
+              src="../public/icon-chevron.svg"
+              alt="arrow"
+              class="mobile-arrow"
+            />
+          </li>
+          <li class="planet-list-mobile">
+            <div class="color-planet">
+              <div class="color-1" id="four"></div>
+              <a class="mobile-nav-link" href="../pages/mars.html">Mars</a>
+            </div>
+            <img
+              src="../public/icon-chevron.svg"
+              alt="arrow"
+              class="mobile-arrow"
+            />
+          </li>
+          <li class="planet-list-mobile">
+            <div class="color-planet">
+              <div class="color-1" id="five"></div>
+              <a class="mobile-nav-link" href="../pages/jupiter.html"
+                >Jupiter</a
+              >
+            </div>
+            <img
+              src="../public/icon-chevron.svg"
+              alt="arrow"
+              class="mobile-arrow"
+            />
+          </li>
+          <li class="planet-list-mobile">
+            <div class="color-planet">
+              <div class="color-1" id="six"></div>
+              <a class="mobile-nav-link" href="../pages/saturn.html">Saturn</a>
+            </div>
+            <img
+              src="../public/icon-chevron.svg"
+              alt="arrow"
+              class="mobile-arrow"
+            />
+          </li>
+          <li class="planet-list-mobile">
+            <div class="color-planet">
+              <div class="color-1" id="seven"></div>
+              <a class="mobile-nav-link" href="../pages/uranus.html">Uranus</a>
+            </div>
+            <img
+              src="../public/icon-chevron.svg"
+              alt="arrow"
+              class="mobile-arrow"
+            />
+          </li>
+          <li class="planet-list-mobile">
+            <div class="color-planet">
+              <div class="color-1" id="eight"></div>
+              <a class="mobile-nav-link" href="../pages/neptune.html"
+                >Neptune</a
+              >
+            </div>
+            <img
+              src="../public/icon-chevron.svg"
+              alt="arrow"
+              class="mobile-arrow"
+            />
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-    <!-- Internal Structure Content Start -->
+    <!-- end of mobile navigation  -->
+    <main>
+      <section class="hero container section">
+        <div class="hero-box-two">
+          <img
+            src="../public/planet-earth.svg"
+            alt=""
+            id="overview-img"
+            class="image-one"
+          />
+          <img
+            src="../public/planet-earth-internal.svg"
+            alt=""
+            id="internal-img"
+            class="image-one hidden"
+          />
+          <img
+            src="../public/geology-earth.png"
+            alt=""
+            id="geology-img"
+            class="image-one-geology hidden"
+          />
 
-    Earth's interior, like that of the other terrestrial planets, is divided
-    into layers by their chemical or physical (rheological) properties. The
-    outer layer is a chemically distinct silicate solid crust, which is
-    underlain by a highly viscous solid mantle. Source : Wikipedia
-    <!-- URL: https://en.wikipedia.org/wiki/Earth#Internal_structure -->
+          <div class="hero-content-box">
+            <div class="title-paragraph">
+              <h1 class="hero-title">Earth</h1>
 
-    <!-- Internal Structure Content End -->
+              <div class="overview-box">
+                <p class="hero-paragraph-text" id="overview-text">
+                  Third planet from the Sun and the only known planet to harbor
+                  life. About 29.2% of Earth's surface is land with remaining
+                  70.8% is covered with water. Earth's distance from the Sun,
+                  physical properties and geological history have allowed life
+                  to evolve and thrive.
+                </p>
 
-    <!-- Surface Geology Content Start -->
+                <div class="wiki-box">
+                  <p class="hero-link-text">
+                    <strong class="text-wiki">Source :</strong>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Earth"
+                      target="_blank"
+                    >
+                      Wikipedia</a
+                    >
+                  </p>
+                  <img
+                    src="../public/icon-source.svg"
+                    alt=""
+                    class="link-icon"
+                  />
+                </div>
+              </div>
 
-    The total surface area of Earth is about 510 million km2. The continental
-    crust consists of lower density material such as the igneous rocks granite
-    and andesite. Less common is basalt, a denser volcanic rock that is the
-    primary constituent of the ocean floors. Source : Wikipedia
-    <!-- URL: https://en.wikipedia.org/wiki/Earth#Surface -->
+              <div class="interal-structure-box hidden">
+                <p class="hero-paragraph-text" id="Structure-text">
+                  Earth's interior, like that of the other terrestrial planets,
+                  is divided into layers by their chemical or physical
+                  (rheological) properties. The outer layer is a chemically
+                  distinct silicate solid crust, which is underlain by a highly
+                  viscous solid mantle.
+                </p>
 
-    <!-- Surface Geology Content End -->
+                <div class="wiki-box">
+                  <p class="hero-link-text">
+                    <strong class="text-wiki">Source :</strong>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Earth#Internal_structure"
+                      target="_blank"
+                    >
+                      Wikipedia</a
+                    >
+                  </p>
+                  <img
+                    src="../public/icon-source.svg"
+                    alt=""
+                    class="link-icon"
+                  />
+                </div>
+              </div>
 
-    01 Overview 02 Internal Structure 03 Surface Geology Rotation Time 0.99 Days
-    Revolution Time 365.26 Days Radius 6,371 KM Average Temp. 16°c
+              <div class="surface-geology-box hidden">
+                <p class="hero-paragraph-text" id="geology-text">
+                  The total surface area of Earth is about 510 million km2. The
+                  continental crust consists of lower density material such as
+                  the igneous rocks granite and andesite. Less common is basalt,
+                  a denser volcanic rock that is the primary constituent of the
+                  ocean floors.
+                </p>
+
+                <div class="wiki-box">
+                  <p class="hero-link-text">
+                    <strong class="text-wiki">Source :</strong>
+
+                    <a
+                      href="  https://en.wikipedia.org/wiki/Earth#Surface "
+                      target="_blank"
+                    >
+                      Wikipedia</a
+                    >
+                  </p>
+                  <img
+                    src="../public/icon-source.svg"
+                    alt=""
+                    class="link-icon"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="button-box">
+              <button class="button btn" id="overview">
+                01 &nbsp; Overview
+              </button>
+              <button class="button btn" id="structure">
+                02 &nbsp; Internal Structure
+              </button>
+              <button class="button btn" id="geology">
+                03 &nbsp; Surface Geology
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="info container section">
+        <div class="info-mini-box">
+          <div class="info-content-box">
+            <p class="info-one">Rotation Time</p>
+            <h5 class="info-two">0.99 Days</h5>
+          </div>
+        </div>
+
+        <div class="info-mini-box">
+          <div class="info-content-box">
+            <p class="info-one">Revolution Time</p>
+            <h5 class="info-two">365.26 Days</h5>
+          </div>
+        </div>
+
+        <div class="info-mini-box">
+          <div class="info-content-box">
+            <p class="info-one">Days Radius</p>
+            <h5 class="info-two">6,371 KM</h5>
+          </div>
+        </div>
+
+        <div class="info-mini-box">
+          <div class="info-content-box">
+            <p class="info-one">Average Temp.</p>
+            <h5 class="info-two">16°c</h5>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="../src/main.js"></script>
   </body>
 </html>

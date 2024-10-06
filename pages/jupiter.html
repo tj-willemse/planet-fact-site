@@ -1,62 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Planets fact site</title>
+  </head>
+  <body id="page5">
+    <header class="header container">
+      <div class="main-header-box">
+        <h1 class="header-title">The Planets</h1>
+        <nav>
+          <ul class="planet-navigation">
+            <li class="planet-list">
+              <a class="nav-content" href="/index.html">Mercury</a>
+            </li>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Planets fact site</title>
-</head>
-<body>
-  Jupiter
+            <li class="planet-list">
+              <a class="nav-content" href="../pages/venus.html">Venus</a>
+            </li>
+            <li class="planet-list">
+              <a class="nav-content" href="../pages/earth.html">Earth</a>
+            </li>
+            <li class="planet-list">
+              <a class="nav-content" href="../pages/mars.html">Mars</a>
+            </li>
+            <li class="planet-list">
+              <a class="nav-content" href="../pages/jupiter.html">Jupiter</a>
+            </li>
+            <li class="planet-list">
+              <a class="nav-content" href="../pages/saturn.html">Saturn</a>
+            </li>
+            <li class="planet-list">
+              <a class="nav-content" href="../pages/uranus.html">Uranus</a>
+            </li>
+            <li class="planet-list">
+              <a class="nav-content" href="../pages/neptune.html">Neptune</a>
+            </li>
+          </ul>
+        </nav>
+        <img src="../public/icon-hamburger.svg" alt="" class="drop-down-icon" />
+      </div>
 
-  <!-- Overview Content Start -->
+      <div class="button-box-one">
+        <button class="button-one" id="overview-one">Overview</button>
+        <button class="button-one" id="structure-one">Structure</button>
+        <button class="button-one" id="geology-one">Surface</button>
+      </div>
+    </header>
+    <!-- mobile navigation -->
 
-  Jupiter is the fifth planet from the Sun and the largest in the Solar System. 
-  It is a gas giant with a mass two and a half times that of all the other 
-  planets in the Solar System combined, but less than one-thousandth the mass 
-  of the Sun.
+    <div class="mobile-nav hidden">
+      <nav>
+        <ul class="mobile-nav-menu">
+          <li class="planet-list-mobile">
+            <div class="color-planet">
+              <div class="color-1" id="one"></div>
+              <a class="mobile-nav-link" href="/index.html">Mercury</a>
+            </div>
+            <img
+              src="../public/icon-chevron.svg"
+              alt="arrow"
+              class="mobile-arrow"
+            />
+          </li>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Jupiter -->
+          <li class="planet-list-mobile">
+            <div class="color-planet">
+              <div class="color-1" id="two"></div>
+              <a class="mobile-nav-link" href="../pages/venus.html">Venus</a>
+            </div>
+            <img
+              src="../public/icon-chevron.svg"
+              alt="arrow"
+              class="mobile-arrow"
+            />
+          </li>
+          <li class="planet-list-mobile">
+            <div class="color-planet">
+              <div class="color-1" id="three"></div>
+              <a class="mobile-nav-link" href="../pages/earth.html">Earth</a>
+            </div>
+            <img
+              src="../public/icon-chevron.svg"
+              alt="arrow"
+              class="mobile-arrow"
+            />
+          </li>
+          <li class="planet-list-mobile">
+            <div class="color-planet">
+              <div class="color-1" id="four"></div>
+              <a class="mobile-nav-link" href="../pages/mars.html">Mars</a>
+            </div>
+            <img
+              src="../public/icon-chevron.svg"
+              alt="arrow"
+              class="mobile-arrow"
+            />
+          </li>
+          <li class="planet-list-mobile">
+            <div class="color-planet">
+              <div class="color-1" id="five"></div>
+              <a class="mobile-nav-link" href="../pages/jupiter.html"
+                >Jupiter</a
+              >
+            </div>
+            <img
+              src="../public/icon-chevron.svg"
+              alt="arrow"
+              class="mobile-arrow"
+            />
+          </li>
+          <li class="planet-list-mobile">
+            <div class="color-planet">
+              <div class="color-1" id="six"></div>
+              <a class="mobile-nav-link" href="../pages/saturn.html">Saturn</a>
+            </div>
+            <img
+              src="../public/icon-chevron.svg"
+              alt="arrow"
+              class="mobile-arrow"
+            />
+          </li>
+          <li class="planet-list-mobile">
+            <div class="color-planet">
+              <div class="color-1" id="seven"></div>
+              <a class="mobile-nav-link" href="../pages/uranus.html">Uranus</a>
+            </div>
+            <img
+              src="../public/icon-chevron.svg"
+              alt="arrow"
+              class="mobile-arrow"
+            />
+          </li>
+          <li class="planet-list-mobile">
+            <div class="color-planet">
+              <div class="color-1" id="eight"></div>
+              <a class="mobile-nav-link" href="../pages/neptune.html"
+                >Neptune</a
+              >
+            </div>
+            <img
+              src="../public/icon-chevron.svg"
+              alt="arrow"
+              class="mobile-arrow"
+            />
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-  <!-- Overview Content End -->
+    <!-- end of mobile navigation  -->
+    <main>
+      <section class="hero container section">
+        <div class="hero-box-two">
+          <img
+            src="../public/planet-jupiter.svg"
+            alt=""
+            id="overview-img"
+            class="image-one"
+          />
+          <img
+            src="../public/planet-jupiter-internal.svg"
+            alt=""
+            id="internal-img"
+            class="image-one hidden"
+          />
+          <img
+            src="../public/geology-jupiter.png"
+            alt=""
+            id="geology-img"
+            class="image-one-geology hidden"
+          />
 
-  <!-- Internal Structure Content Start -->
+          <div class="hero-content-box">
+            <div class="title-paragraph">
+              <h1 class="hero-title">Jupiter</h1>
 
-  When the Juno arrived in 2016, it found that Jupiter has a very diffuse core 
-  that mixes into its mantle. A possible cause is an impact from a planet of 
-  about ten Earth masses a few million years after Jupiter's formation, which 
-  would have disrupted an originally solid Jovian core.
+              <div class="overview-box">
+                <p class="hero-paragraph-text" id="overview-text">
+                  Jupiter is the fifth planet from the Sun and the largest in
+                  the Solar System. It is a gas giant with a mass two and a half
+                  times that of all the other planets in the Solar System
+                  combined, but less than one-thousandth the mass of the Sun.
+                </p>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Jupiter#Internal_structure -->
+                <div class="wiki-box">
+                  <p class="hero-link-text">
+                    <strong class="text-wiki">Source :</strong>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Jupiter"
+                      target="_blank"
+                    >
+                      Wikipedia</a
+                    >
+                  </p>
+                  <img
+                    src="../public/icon-source.svg"
+                    alt=""
+                    class="link-icon"
+                  />
+                </div>
+              </div>
 
-  <!-- Internal Structure Content End -->
+              <div class="interal-structure-box hidden">
+                <p class="hero-paragraph-text" id="Structure-text">
+                  When the Juno arrived in 2016, it found that Jupiter has a
+                  very diffuse core that mixes into its mantle. A possible cause
+                  is an impact from a planet of about ten Earth masses a few
+                  million years after Jupiter's formation, which would have
+                  disrupted an originally solid Jovian core.
+                </p>
+                <div class="wiki-box">
+                  <p class="hero-link-text">
+                    <strong class="text-wiki">Source :</strong>
+                    <a
+                      href=" https://en.wikipedia.org/wiki/Jupiter#Internal_structure"
+                      target="_blank"
+                    >
+                      Wikipedia</a
+                    >
+                  </p>
+                  <img
+                    src="../public/icon-source.svg"
+                    alt=""
+                    class="link-icon"
+                  />
+                </div>
+              </div>
 
-  <!-- Surface Geology Content Start -->
+              <div class="surface-geology-box hidden">
+                <p class="hero-paragraph-text" id="geology-text">
+                  The best known feature of Jupiter is the Great Red Spot, a
+                  persistent anticyclonic storm located 22° south of the
+                  equator. It is known to have existed since at least 1831, and
+                  possibly since 1665.
+                </p>
+                <div class="wiki-box">
+                  <p class="hero-link-text">
+                    <strong class="text-wiki">Source :</strong>
 
-  The best known feature of Jupiter is the Great Red Spot, a persistent 
-  anticyclonic storm located 22° south of the equator. It is known to have 
-  existed since at least 1831, and possibly since 1665.
+                    <a
+                      href="https://en.wikipedia.org/wiki/Jupiter#Great_Red_Spot_and_other_vortices"
+                      target="_blank"
+                    >
+                      Wikipedia</a
+                    >
+                  </p>
+                  <img
+                    src="../public/icon-source.svg"
+                    alt=""
+                    class="link-icon"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="button-box">
+              <button class="button btn" id="overview">
+                01 &nbsp; Overview
+              </button>
+              <button class="button btn" id="structure">
+                02 &nbsp; Internal Structure
+              </button>
+              <button class="button btn" id="geology">
+                03 &nbsp; Surface Geology
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Jupiter#Great_Red_Spot_and_other_vortices -->
+      <section class="info container section">
+        <div class="info-mini-box">
+          <div class="info-content-box">
+            <p class="info-one">Rotation Time</p>
+            <h5 class="info-two">9.93 Hours</h5>
+          </div>
+        </div>
 
-  <!-- Surface Geology Content End -->
+        <div class="info-mini-box">
+          <div class="info-content-box">
+            <p class="info-one">Revolution Time</p>
+            <h5 class="info-two">11.86 Years</h5>
+          </div>
+        </div>
 
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
+        <div class="info-mini-box">
+          <div class="info-content-box">
+            <p class="info-one">Days Radius</p>
+            <h5 class="info-two">69,911 KM</h5>
+          </div>
+        </div>
 
-  Rotation Time
-  9.93 Hours
-
-  Revolution Time
-  11.86 Years
-
-  Radius
-  69,911 KM
-
-  Average Temp.
-  -108°c
-</body>
+        <div class="info-mini-box">
+          <div class="info-content-box">
+            <p class="info-one">Average Temp.</p>
+            <h5 class="info-two">-108°c</h5>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="../src/main.js"></script>
+  </body>
 </html>

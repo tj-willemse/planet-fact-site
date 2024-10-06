@@ -79,6 +79,7 @@
   display: flex;
 }
 
+/* grab */
 .info {
   display: flex;
   flex-direction: column;
@@ -116,6 +117,28 @@
   width: 50px;
   height: 60px;
 }
+.saturn-geology {
+  position: absolute;
+  left: 35%;
+  top: 42%;
+  width: 90px;
+  height: 100px;
+}
+
+.saturn {
+  width: 210px;
+  height: 210px;
+}
+
+.button-one {
+  padding-top: 10px;
+  margin-top: -15px;
+}
+
+.button-one:hover {
+  color: var(--clr-white);
+  border-top: 5px solid var(--hover-color);
+}
 
 /* xs */
 @media (min-width: 475px) {
@@ -123,7 +146,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     height: 100%;
   }
   .hero-box-two {
@@ -231,10 +253,29 @@
     width: 80px;
     height: 100px;
   }
+  .saturn-geology {
+    position: absolute;
+    left: 39.5%;
+    top: 44%;
+    width: 100px;
+    height: 110px;
+  }
+
+  .saturn {
+    width: 230px;
+    height: 230px;
+  }
 }
 
 /* Sm */
 @media (min-width: 640px) {
+  .nav-content {
+    padding-bottom: 11px;
+  }
+  .nav-content:hover {
+    border-bottom: 5px solid var(--hover-color);
+  }
+
   .hero {
     display: flex;
     justify-content: center;
@@ -282,7 +323,7 @@
   .wiki-box {
     display: flex;
     justify-content: start;
-    align-items: start;
+    align-items: center;
     gap: 5px;
     height: 40px;
     font-size: var(--size-sm);
@@ -341,10 +382,30 @@
     width: 90px;
     height: 110px;
   }
+  .saturn-geology {
+    position: absolute;
+    left: 42%;
+    top: 40%;
+    width: 100px;
+    height: 110px;
+  }
+
+  .saturn {
+    width: 230px;
+    height: 230px;
+  }
 }
 
 /* md */
 @media (min-width: 768px) {
+  .nav-content {
+    padding-top: 20px;
+    margin-top: 15px;
+  }
+  .nav-content:hover {
+    border-bottom: 0px;
+    border-top: 5px solid var(--hover-color);
+  }
   .hero {
     display: flex;
     justify-content: center;
@@ -443,10 +504,32 @@
     width: 130px;
     height: 160px;
   }
+
+  .saturn-geology {
+    position: absolute;
+    left: 17%;
+    top: 52%;
+    width: 100px;
+    height: 110px;
+  }
+
+  .saturn {
+    width: 230px;
+    height: 230px;
+    margin-left: 20px;
+    margin-bottom: 60px;
+  }
 }
 
 /* Lg */
 @media (min-width: 1024px) {
+  .nav-content {
+    padding-top: 30px;
+    margin-top: 15px;
+  }
+  .nav-content:hover {
+    border-top: 5px solid var(--hover-color);
+  }
   .image-one {
     width: 200px;
     height: 200px;
@@ -478,6 +561,21 @@
     top: 65%;
     width: 130px;
     height: 160px;
+  }
+
+  .saturn-geology {
+    position: absolute;
+    left: 25.3%;
+    top: 59%;
+    width: 130px;
+    height: 140px;
+  }
+
+  .saturn {
+    width: 260px;
+    height: 260px;
+    margin-left: 10px;
+    margin-bottom: 60px;
   }
 }
 
@@ -518,17 +616,25 @@
     width: 130px;
     height: 160px;
   }
+
+  .saturn-geology {
+    position: absolute;
+    left: 27%;
+    top: 60%;
+    width: 140px;
+    height: 160px;
+  }
+
+  .saturn {
+    width: 280px;
+    height: 280px;
+    margin-left: -50px;
+    margin-bottom: 60px;
+  }
 }
 
 /* 2xL */
 @media (min-width: 1536px) {
-  .image-one {
-    width: 220px;
-    height: 220px;
-    margin-left: 10px;
-    margin-bottom: 60px;
-  }
-
   .hero-title {
     font-size: var(--size-6xl);
   }
@@ -543,18 +649,44 @@
   .button-box {
     width: 320px;
   }
+  .info {
+    justify-content: center;
+    padding-left: 330px;
+    gap: 1.5rem;
+  }
   .info-mini-box {
-    width: 250px;
+    width: 230px;
     height: 70px;
     border: 0.1px solid var(--clr-darkish-gray);
   }
   .hero-box-two {
     gap: 24rem;
   }
+  .image-one {
+    width: 220px;
+    height: 220px;
+    margin-left: 10px;
+    margin-bottom: 60px;
+  }
+
   .image-one-geology {
     left: 35.5%;
     top: 52%;
     width: 140px;
     height: 160px;
+  }
+  .saturn-geology {
+    position: absolute;
+    left: 34%;
+    top: 48%;
+    width: 140px;
+    height: 160px;
+  }
+
+  .saturn {
+    width: 280px;
+    height: 280px;
+    margin-left: -50px;
+    margin-bottom: 60px;
   }
 }

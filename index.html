@@ -18,7 +18,7 @@
         <nav>
           <ul class="planet-navigation">
             <li class="planet-list">
-              <a class="nav-content" href="./pages/venus.html">Mercury</a>
+              <a class="nav-content" href="/index.html">Mercury</a>
             </li>
 
             <li class="planet-list">
@@ -44,15 +44,111 @@
             </li>
           </ul>
         </nav>
-        <img src="./public/icon-hamburger.svg" alt="" class="drop-down-icon" />
+        <img src="./public/icon-hamburger.svg" alt="mobile-button" class="drop-down-icon"  />
       </div>
 
       <div class="button-box-one">
-        <button class="button-one">Overview</button>
-        <button class="button-one">Structure</button>
-        <button class="button-one">Surface</button>
+        <button class="button-one" id="overview-one">Overview</button>
+        <button class="button-one" id="structure-one">Structure</button>
+        <button class="button-one" id="geology-one">Surface</button>
       </div>
+
     </header>
+
+    <!-- mobile navigation -->
+
+    <div class="mobile-nav hidden">
+
+      <nav>
+        <ul class="mobile-nav-menu">
+
+          <li class="planet-list-mobile">
+            <div class="color-planet" >
+            <div class="color-1" id="one"></div>
+            <a class="mobile-nav-link" href="/index.html">Mercury</a>
+          </div>
+            <img src="./public/icon-chevron.svg" alt="arrow" class="mobile-arrow">
+          </li>
+         
+
+          <li class="planet-list-mobile">
+            <div class="color-planet">
+            <div class="color-1" id="two"></div>
+            <a class="mobile-nav-link" href="./pages/venus.html">Venus</a>
+          </div>
+            <img src="./public/icon-chevron.svg" alt="arrow" class="mobile-arrow">
+          </li>
+          <li class="planet-list-mobile">
+            <div class="color-planet">
+            <div class="color-1" id="three"></div>
+            <a class="mobile-nav-link" href="./pages/earth.html">Earth</a>
+          </div>
+            <img src="./public/icon-chevron.svg" alt="arrow" class="mobile-arrow">
+          </li>
+          <li class="planet-list-mobile">
+            <div class="color-planet">
+            <div class="color-1" id="four"></div>
+            <a class="mobile-nav-link" href="./pages/mars.html">Mars</a>
+          </div>
+            <img src="./public/icon-chevron.svg" alt="arrow" class="mobile-arrow">
+          </li>
+          <li class="planet-list-mobile">
+            <div class="color-planet">
+            <div class="color-1" id="five"></div>
+            <a class="mobile-nav-link" href="./pages/jupiter.html">Jupiter</a>
+          </div>
+            <img src="./public/icon-chevron.svg" alt="arrow" class="mobile-arrow">
+          </li>
+          <li class="planet-list-mobile">
+            <div class="color-planet">
+            <div class="color-1" id="six"></div>
+            <a class="mobile-nav-link" href="./pages/saturn.html">Saturn</a>
+          </div>
+            <img src="./public/icon-chevron.svg" alt="arrow" class="mobile-arrow">
+          </li>
+          <li class="planet-list-mobile">
+            <div class="color-planet">
+            <div class="color-1" id="seven"></div>
+            <a class="mobile-nav-link" href="./pages/uranus.html">Uranus</a>
+          </div>
+            <img src="./public/icon-chevron.svg" alt="arrow" class="mobile-arrow">
+          </li>
+          <li class="planet-list-mobile">
+            <div class="color-planet">
+            <div class="color-1"  id="eight"></div>
+            <a class="mobile-nav-link" href="./pages/neptune.html">Neptune</a>
+          </div>
+            <img src="./public/icon-chevron.svg" alt="arrow" class="mobile-arrow">
+          </li>
+
+        </ul>
+      </nav>
+
+
+
+
+
+
+    </div>
+
+
+
+     <!-- end of mobile navigation  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <main>
       <section class="hero container section">
         <div class="hero-box-two">
@@ -114,15 +210,21 @@
                   density is the second highest in the Solar System at 5.427
                   g/cm3 , only slightly less than Earth's density.
                 </p>
-
-                <p class="hero-link-text">
-                  <strong class="text-wiki">Source :</strong>
-                  <a
-                    href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure"
-                  >
-                    Wikipedia</a
-                  >
-                </p>
+                <div class="wiki-box">
+                  <p class="hero-link-text">
+                    <strong class="text-wiki">Source :</strong>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure"
+                    >
+                      Wikipedia</a
+                    >
+                  </p>
+                  <img
+                    src="./public/icon-source.svg"
+                    alt=""
+                    class="link-icon"
+                  />
+                </div>
               </div>
 
               <div class="surface-geology-box hidden">
@@ -134,27 +236,37 @@
                   Moon’s.
                 </p>
 
-                <p class="hero-link-text">
-                  <strong class="text-wiki">Source :</strong>
+                <div class="wiki-box">
+                  <p class="hero-link-text">
+                    <strong class="text-wiki">Source :</strong>
 
-                  <a
-                    href="  https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology"
-                  >
-                    Wikipedia</a
-                  >
-                </p>
+                    <a
+                      href="  https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology"
+                      class="link-icon"
+                    >
+                      Wikipedia</a
+                    >
+                  </p>
+                  <img
+                    src="./public/icon-source.svg"
+                    alt=""
+                    class="link-icon"
+                  />
+                </div>
               </div>
             </div>
-            <div class="button-box">
-              <button class="button btn" id="overview">
-                01 &nbsp; Overview
-              </button>
-              <button class="button btn" id="structure">
-                02 &nbsp; Internal Structure
-              </button>
-              <button class="button btn" id="geology">
-                03 &nbsp; Surface Geology
-              </button>
+
+              <div class="button-box">
+                <button class="button btn" id="overview">
+                  01 &nbsp; Overview
+                </button>
+                <button class="button btn" id="structure">
+                  02 &nbsp; Internal Structure
+                </button>
+                <button class="button btn" id="geology">
+                  03 &nbsp; Surface Geology
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -171,7 +283,7 @@
         <div class="info-mini-box">
           <div class="info-content-box">
             <p class="info-one">Revolution Time</p>
-            <h5 class="info-two">87.97</h5>
+            <h5 class="info-two">87.97 Days</h5>
           </div>
         </div>
 
